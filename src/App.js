@@ -14,9 +14,9 @@ function App() {
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter>
         <Routes>
-          <Route path="/">
+          <Route path="/react-admin-ui">
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
             <Route path="users">
@@ -27,7 +27,7 @@ function App() {
                 element={<New inputs={userInputs} title="Add New User" />}
               />
             </Route>
-            <Route path="products">
+            <Route path="/react-admin-ui/products">
               <Route index element={<List />} />
               <Route path=":productId" element={<Single />} />
               <Route

@@ -20,7 +20,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="top">
-        <Link to="/" style={{ textDecoration: "none" }}>
+        <Link to="/react-admin-ui" style={{ textDecoration: "none" }}>
           <span className="logo">React Admin</span>
         </Link>
       </div>
@@ -29,20 +29,20 @@ const Sidebar = () => {
         <ul>
           <p className="title">MAIN</p>
           <li>
-            <Link to="/" style={{ textDecoration: "none" }}>
+            <Link to="/react-admin-ui" style={{ textDecoration: "none" }}>
             <DashboardIcon className="icon" />
            
               <span>Dashboard</span>
                </Link>
           </li>
           <p className="title">LISTS</p>
-          <Link to="/users" style={{ textDecoration: "none" }}>
+          <Link to="/react-admin-ui/users" style={{ textDecoration: "none" }}>
             <li>
               <PersonOutlineIcon className="icon" />
               <span>Users</span>
             </li>
           </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          <Link to="/react-admin-ui/products" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
               <span>Products</span>

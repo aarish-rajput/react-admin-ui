@@ -41,7 +41,7 @@ const Datatable=()=> {
         headerName: "Action",
         width: 200,
         renderCell: (params)=> {
-            return (<div className="cellAction" > <Link to="/users/test" style= {
+            return (<div className="cellAction" > <Link to="/react-admin-ui/users/test" style= {
                         {
                         textDecoration: "none"
                     }
@@ -61,7 +61,7 @@ const Datatable=()=> {
 
     ,
     ];
-    return (<div className="datatable" > <div className="datatableTitle" > Add New User <Link to="/users/new" className="link" > Add New </Link> </div> <DataGrid className="datagrid"
+    return (<div className="datatable" > <div className="datatableTitle" > Add New User <Link to="/react-admin-ui/users/new" className="link" > Add New </Link> </div> <DataGrid className="datagrid"
 
         rows= {
             data
